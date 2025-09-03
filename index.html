@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaulSpot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img id="logo" src="img/logo.png" alt="RaulMusic">
+
+  <div class="container">
+
+    <!-- Login -->
+    <div class="login-box" id="login-box">
+    <h1>Raul<span style="color:#1db954">Spot</span></h1>
+      <input type="text" id="username" placeholder="Digite seu nome">
+      <input type="password" id="password" placeholder="Digite sua senha">
+      <button id="login-btn">Entrar / Criar conta</button>
+      <p id="login-msg" style="color: red; font-size: 14px;"></p>
+    </div>
+
+    <!-- Player -->
+    <div class="player" id="player" style="display:none;">
+      <img id="cover" src="img/solamento.png" alt="Capa">
+      <h2 id="title">SÓ LAMENTO</h2>
+      <p id="author">Raul Estelionato</p>
+
+      <div id="time-container">
+        <span id="current-time">0:00</span>
+        <span id="remaining-time">-0:00</span>
+      </div>
+
+      <audio id="audio" src="msc/solamento.mp3"></audio>
+
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="pause">⏸</button>
+        <button id="next">⏭</button>
+      </div>
+
+      <input type="range" id="progress" value="0" min="0" max="100">
+      <input type="range" id="volume" value="100" min="0" max="100">
+
+      <h3>Máquina do tempo</h3>
+      <ul id="ranking"></ul>
+
+      <button id="logout-btn" style="margin-top: 15px;">Sair</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

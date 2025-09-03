@@ -1,0 +1,235 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* garante que não tem margem padrão */
+}
+
+.player {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.player img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+#author {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#time-container {
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.controls {
+    margin: 15px 0;
+}
+
+.controls button {
+    background: #1db954;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.controls button:hover {
+    background: #1ed760;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do Chrome/Safari */
+    width: 100%;
+    height: 8px;
+    background: #555; /* fundo cinza escuro */
+    border-radius: 5px;
+    outline: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Para o Chrome, Edge e Safari */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #1db954; /* verde Spotify */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    margin-top: -5px; /* centraliza verticalmente */
+    box-shadow: 0 0 5px #1db954cc;
+    transition: background-color 0.3s ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: #1ed760;
+}
+
+/* Para o Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #1db954;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px #1db954cc;
+    transition: background-color 0.3s ease;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    background: #1ed760;
+}
+
+/* Barras da track para Firefox */
+input[type="range"]::-moz-range-track {
+    background: #555;
+    border-radius: 5px;
+    height: 8px;
+}
+
+/* Barras da track para Chrome, Safari e Edge */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #555;
+    border-radius: 5px;
+    height: 8px;
+}
+
+/* Logo fixa no canto superior esquerdo */
+#logo {
+    position: fixed;
+    top: -50px;
+    left: 15px;
+    width: 270px; /* ajuste conforme desejar */
+    height: auto;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Tela de fundo */
+body {
+  background-color: #121212;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* LOGIN SCREEN */
+#login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+}
+
+.login-box {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+}
+
+.login-box h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.login-box p {
+  color: #b3b3b3;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #1ed760;
+}
+
+/* Player já tinha os estilos */
+.player {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Ranking bonitinho */
+.ranking-box {
+  background: #262626;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.ranking-box h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ranking-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ranking-box li {
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
