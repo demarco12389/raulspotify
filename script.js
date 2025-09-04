@@ -2,7 +2,8 @@ const songs = [
   { title: "SÓ LAMENTO", file: "msc/solamento.mp3", cover: "img/solamento.png" },
   { title: "GORDINHO SACANA", file: "msc/gordinho.mp3", cover: "img/gordinho.png" },
   { title: "NINFETA", file: "msc/ninfeta.mp3", cover: "img/ninfeta.png" },
-  { title: "4AM", file: "msc/4am.mp3", cover: "img/4am.png" }
+  { title: "4AM", file: "msc/4am.mp3", cover: "img/4am.png" },
+  { title: "AMOR ESCOLAR", file: "msc/amorescolar.mp3", cover: "img/amorescolar.png" } // <- NOVA MÚSICA
 ];
 
 let currentSongIndex = 0;
@@ -15,7 +16,7 @@ const loginBtn = document.getElementById("login-btn");
 const logoutBtn = document.getElementById("logout-btn");
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
-const loginMsg = document.getElementById("login-msg");
+const loginMsg = document.getElementById("login-msg")
 
 const audio = document.getElementById("audio");
 const cover = document.getElementById("cover");
